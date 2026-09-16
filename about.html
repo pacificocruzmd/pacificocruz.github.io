@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Dr. Pacifico Cruz, MD</title>
+<meta name="description" content="Dr. Pacifico Cruz moves between reconstructive microsurgery and aesthetic facial surgery, trained under the surgeons who invented the MACS facelift in Ghent, Belgium.">
+<link rel="canonical" href="https://provenanceclinic.com/about.html">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dr. Pacifico Cruz, MD">
+<meta property="og:title" content="About — Dr. Pacifico Cruz, MD">
+<meta property="og:description" content="Dr. Pacifico Cruz moves between reconstructive microsurgery and aesthetic facial surgery, trained under the surgeons who invented the MACS facelift in Ghent, Belgium.">
+<meta property="og:url" content="https://provenanceclinic.com/about.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="About — Dr. Pacifico Cruz, MD">
+<meta name="twitter:description" content="Dr. Pacifico Cruz moves between reconstructive microsurgery and aesthetic facial surgery, trained under the surgeons who invented the MACS facelift in Ghent, Belgium.">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&amp;family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&amp;family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Fraunces:ital,wght@0,300;0,400;0,500;1,400;1,500&amp;display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      font-weight: 400;
+      color: oklch(16% 0.006 50);
+      background: oklch(99% 0.004 90);
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3 { margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; letter-spacing: -0.01em; }
+    p { margin: 0; }
+    a { color: inherit; text-decoration: none; }
+    em { font-style: italic; color: oklch(38% 0.09 155); font-weight: 400; }
+    .eyebrow { font-style: italic; font-size: 14px; font-weight: 400; letter-spacing: 0.02em; color: oklch(52% 0.015 60); }
+    .label { font-size: 13px; font-weight: 400; font-style: italic; letter-spacing: 0.02em; color: oklch(58% 0.008 240); }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px; padding: 17px 38px;
+      font-size: 13px; letter-spacing: 0.08em; border: 1px solid oklch(16% 0.006 50);
+      color: oklch(16% 0.006 50); background: transparent; white-space: nowrap;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    .btn-primary:hover { background: oklch(16% 0.006 50); color: oklch(99% 0.004 90); }
+    .btn-invert { border-color: oklch(84% 0.005 240); color: oklch(84% 0.005 240); }
+    .btn-invert:hover { background: oklch(84% 0.005 240); color: oklch(15% 0.035 155); }
+    .link-quiet {
+      position: relative; font-size: 14.5px; letter-spacing: 0.01em; padding-bottom: 3px;
+      transition: color 0.35s ease;
+    }
+    .link-quiet::after {
+      content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px;
+      background: oklch(38% 0.09 155); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.5s cubic-bezier(.16,1,.3,1);
+    }
+    .link-quiet:hover::after { transform: scaleX(1); }
+    /* ——— NAV: light sans against the editorial serif ——— */
+    .nav .eyebrow, .nav .link-quiet {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-style: normal; font-weight: 300; font-size: 13px; letter-spacing: 0.06em;
+    }
+    .nav-link { color: oklch(16% 0.006 50); opacity: 0.62; transition: opacity 0.35s ease; }
+    .nav-link:hover, .nav-link.is-active { opacity: 1; }
+    .row { border-top: 1px solid oklch(90% 0.006 80); transition: padding-left 0.4s cubic-bezier(.16,1,.3,1); }
+    .row:hover { padding-left: 10px; }
+    .row:hover .row-title { color: oklch(38% 0.09 155); }
+    .row-title { transition: color 0.35s ease; }
+    .footer-link { color: oklch(16% 0.006 50); opacity: 0.55; transition: opacity 0.3s ease; }
+    .footer-link:hover { opacity: 1; }
+
+    /* ——— MOTION ——— */
+    @keyframes rise { from { opacity: 0; transform: translateY(26px); } }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes grow { from { transform: scaleX(0); } }
+    @keyframes aurora { 0%, 100% { transform: translate(-5%, -3%) scale(1); opacity: .5; } 50% { transform: translate(5%, 3%) scale(1.08); opacity: .8; } }
+    @keyframes glow { 0%, 100% { opacity: .4; } 50% { opacity: 1; } }
+
+    .enter { animation: rise 1.25s cubic-bezier(.16,1,.3,1) both; }
+    .d1 { animation-delay: .10s; } .d2 { animation-delay: .26s; } .d3 { animation-delay: .42s; }
+    .d4 { animation-delay: .58s; } .d5 { animation-delay: .74s; } .d6 { animation-delay: .90s; }
+    .draw { animation: draw 2.8s cubic-bezier(.37,0,.16,1) .45s both; }
+    .row { position: relative; }
+    .row::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: oklch(38% 0.09 155); transform: scaleY(0); transform-origin: top; transition: transform .6s cubic-bezier(.16,1,.3,1); }
+    .row:hover::before { transform: scaleY(1); }
+
+    /* scroll-driven — degrades to fully visible where unsupported */
+    @supports (animation-timeline: view()) {
+      .row, .reveal { animation: rise 1s cubic-bezier(.16,1,.3,1) both; animation-timeline: view(); animation-range: entry 2% cover 22%; }
+      .progress { animation: grow linear both; animation-timeline: scroll(root block); }
+      .glow { animation: glow 1s linear both; animation-timeline: view(); animation-range: entry 10% cover 70%; }
+      .aurora { animation: aurora 1s linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .enter, .reveal, .row, .draw, .glow, .aurora {
+        animation: none !important; opacity: 1 !important; transform: none !important; stroke-dashoffset: 0 !important;
+      }
+      .progress { animation: none !important; }
+    }
+
+    /* ——— IMAGE PLACEHOLDERS ——— */
+    .ph {
+      position: relative; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 9px; text-align: center;
+      padding: 24px; background: oklch(96.5% 0.008 80);
+      border: 1px solid oklch(90% 0.006 80); overflow: hidden;
+    }
+    .ph::before {
+      content: ''; width: 26px; height: 26px; border-radius: 50%;
+      border: 1px solid oklch(38% 0.09 155); opacity: 0.45; margin-bottom: 2px; flex: none;
+    }
+    .ph-name { font-size: 13px; font-style: italic; letter-spacing: 0.02em; color: oklch(40% 0.05 155); }
+    .ph-spec { font-size: 10.5px; letter-spacing: 0.09em; text-transform: uppercase; color: oklch(58% 0.012 60); line-height: 1.75; }
+
+    .ph-sm { padding: 12px; gap: 6px; }
+    .ph-sm::before { width: 18px; height: 18px; margin-bottom: 0; }
+    .ph-sm .ph-spec { display: none; }
+    .ph-sm .ph-name { font-size: 11.5px; }
+
+    /* ——— LUZ: offset registration frame on buttons ——— */
+    .btn-primary { position: relative; }
+    .btn-primary::before {
+      content: ''; position: absolute; inset: 0; border: 1px solid currentColor;
+      opacity: .3; transform: translate(5px, 5px); pointer-events: none;
+      transition: transform .55s cubic-bezier(.16,1,.3,1), opacity .55s ease;
+    }
+    .btn-primary:hover::before { transform: translate(0, 0); opacity: 0; }
+
+    /* ——— RESPONSIVE ——— */
+    @media (max-width: 900px) {
+      .cols { grid-template-columns: 1fr 1fr !important; gap: 40px !important; }
+    }
+    @media (max-width: 720px) {
+      .nav { height: 74px !important; }
+      .nav-link { display: none !important; }
+      .hero { min-height: 560px !important; }
+      .row { grid-template-columns: 1fr !important; gap: 10px !important; }
+      .row:hover { padding-left: 0 !important; }
+      .cols { grid-template-columns: 1fr !important; gap: 34px !important; }
+      .btn-primary { width: 100% !important; justify-content: center !important; }
+    }
+  </style>
+
+</head>
+<body>
+
+
+<div style="width:100%; background: oklch(99% 0.004 90);">
+
+  <!-- NAV -->
+  <div class="nav" style="position:sticky; top:0; z-index:20; display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; padding:0 clamp(24px, 5vw, 64px); height:96px; background: oklch(99% 0.004 90 / 0.9); backdrop-filter: blur(6px);">
+    <div style="display:flex; align-items:center; gap:38px;">
+      <a href="about.html" class="eyebrow nav-link is-active">About</a>
+      <a href="procedures/index.html" class="eyebrow nav-link">Procedures</a>
+    </div>
+    <a href="index.html" style="text-decoration:none; color:inherit;"><span style="font-family:'Fraunces', serif; font-weight:500; font-style:italic; font-size:21px; text-align:center;">Dr. Pacifico Cruz</span></a>
+    <div style="display:flex; align-items:center; justify-content:flex-end; gap:38px;">
+      <a href="journal.html" class="eyebrow nav-link">Journal</a>
+      <a href="locations.html" class="eyebrow nav-link">Locations</a>
+      <a href="contact.html" class="link-quiet">Book</a>
+    </div>
+    <div class="progress" style="position:absolute; left:0; bottom:0; height:2px; width:100%; background:oklch(38% 0.09 155); transform:scaleX(0); transform-origin:left;"></div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="cols" style="max-width:1080px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px) clamp(72px, 12vw, 100px); display:grid; grid-template-columns: 0.42fr 1fr; gap:80px; align-items:center;">
+    <!-- <img src="images/about/portrait.jpg" alt="Dr. Pacifico Cruz" style="width:100%; aspect-ratio:0.8; object-fit:cover;"> -->
+    <div class="enter ph" style="aspect-ratio:0.8;">
+      <div class="ph-name">Portrait &mdash; Dr. Pacifico Cruz</div>
+      <div class="ph-spec">4:5 &middot; 1600&times;2000 min<br>same frame as homepage</div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:26px;">
+      <span class="eyebrow enter d1">About</span>
+      <h1 class="enter d2" style="font-weight:300; font-size:clamp(34px, 4vw, 54px); line-height:1.2; max-width:560px;">Trained at the source of the technique he practices</h1>
+      <p class="enter d3" style="font-size:16px; line-height:1.85; color:oklch(38% 0.012 55); max-width:520px;">
+        Dr. Pacifico Cruz is a board-certified plastic surgeon who moves fluently
+        between reconstructive microsurgery and aesthetic facial surgery &mdash; work
+        most practices keep apart &mdash; with regenerative technique carrying the same
+        precision across both.
+      </p>
+    </div>
+  </div>
+
+  <!-- FULL BIO -->
+  <div style="max-width:680px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 150px);">
+    <p style="font-size:16px; line-height:2; color:oklch(30% 0.012 55);">
+      Dr. Pacifico Cruz completed his MD at the University of the Philippines College of
+      Medicine in 2015, then residency in the Divisions of Plastic Surgery and Burns at
+      UP&ndash;Philippine General Hospital (2016&ndash;2022) &mdash; a foundation in
+      reconstruction, burn care and lymphedema surgery that both his later fellowships
+      build on. He is a Diplomate of the Philippine Board of Plastic Surgery (2024).
+      <br><br>
+      He completed two fellowships: a full year under Dr. Rei Ogawa at Nippon Medical
+      School in Tokyo (2024&ndash;2025), whose work in reconstructive surgery,
+      microsurgery, keloid management and lymphedema is internationally recognised; and,
+      in 2025, aesthetic plastic surgery under Dr. Patrick Tonnard and Dr. Alexis
+      Verpaele in Ghent and at E:MC2 in Sint-Martens-Latem, Belgium (March&ndash;June;
+      MACS facelift, lipofilling, nanofat), with additional training in Brussels.
+      <br><br>
+      He consults across partner hospitals in Metro Manila, with his flagship lymphedema
+      surgery consultancy at St. Luke's Medical Center, BGC.
+    </p>
+  </div>
+
+  <!-- AT WORK -->
+  <div style="max-width:1080px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 150px);">
+    <!-- <img src="images/about/at-work.jpg" alt="Dr. Cruz operating" style="width:100%; aspect-ratio:1.5; object-fit:cover;"> -->
+    <div class="ph reveal" style="aspect-ratio:1.5;">
+      <div class="ph-name">At work &mdash; operative or microscope</div>
+      <div class="ph-spec">3:2 &middot; 2400px wide min &middot; no identifiable patient</div>
+    </div>
+  </div>
+
+  <!-- TIMELINE -->
+  <div id="credentials-timeline" style="background: oklch(97% 0.008 80);">
+    <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px);">
+      <div style="text-align:center; margin-bottom:76px;">
+        <span class="eyebrow">Training</span>
+        <h2 style="font-weight:300; font-size:clamp(28px, 3vw, 38px); line-height:1.25; margin-top:16px;">Credentials &amp; Timeline</h2>
+      </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 130px 1fr; gap:32px; align-items:baseline;">
+        <span class="label">2015</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:6px;">MD</div>
+          <div style="font-size:13.5px; line-height:1.6; color:oklch(45% 0.01 55);">University of the Philippines College of Medicine</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 130px 1fr; gap:32px; align-items:baseline;">
+        <span class="label">2016&ndash;2022</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:6px;">Residency</div>
+          <div style="font-size:13.5px; line-height:1.6; color:oklch(45% 0.01 55);">Divisions of Plastic Surgery &amp; Burns, UP&ndash;PGH</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 130px 1fr; gap:32px; align-items:baseline;">
+        <span class="label">2024</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:6px;">Diplomate</div>
+          <div style="font-size:13.5px; line-height:1.6; color:oklch(45% 0.01 55);">Philippine Board of Plastic Surgery</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 130px 1fr; gap:32px; align-items:baseline;">
+        <span class="label">Mar&ndash;Jun 2025</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:6px;">Fellowship &mdash; Aesthetic</div>
+          <div style="font-size:13.5px; line-height:1.6; color:oklch(45% 0.01 55);">MACS Facelift, Lipofilling &amp; Nanofat, Ghent &amp; Sint-Martens-Latem &mdash; under Dr. Patrick Tonnard &amp; Dr. Alexis Verpaele, with additional training in Brussels</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; border-bottom:1px solid oklch(88% 0.006 80); display:grid; grid-template-columns: 130px 1fr; gap:32px; align-items:baseline;">
+        <span class="label">2024&ndash;2025</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:6px;">Fellowship &mdash; Reconstructive</div>
+          <div style="font-size:13.5px; line-height:1.6; color:oklch(45% 0.01 55);">Reconstructive Surgery, Microsurgery, Keloid &amp; Lymphedema, Tokyo &mdash; under Dr. Rei Ogawa</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FELLOWSHIP CALLOUT -->
+  <div id="technique-provenance" style="max-width:900px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px); text-align:center;">
+    <span class="eyebrow" style="color:oklch(38% 0.09 155);">Technique Provenance</span>
+    <h3 style="font-weight:300; font-size:clamp(24px, 2.6vw, 32px); line-height:1.35; margin:20px auto 0; max-width:640px;">Trained directly under the surgeons whose techniques he practices</h3>
+    <div class="cols" style="display:grid; grid-template-columns: 1fr 1fr; gap:48px; margin-top:48px; text-align:left;">
+      <div>
+        <p style="font-size:15px; line-height:1.8; color:oklch(38% 0.012 55);">
+          The MACS facelift, lipofilling and nanofat application were
+          developed by Dr. Patrick Tonnard and Dr. Alexis Verpaele. Dr. Cruz
+          trained under them directly, March to June 2025, in Ghent and at
+          E:MC2 in Sint-Martens-Latem, with additional training in Brussels,
+          Belgium.
+        </p>
+        <!-- <img src="images/about/ghent-fellowship.jpg" alt="Fellowship training, Ghent" style="width:100%; aspect-ratio:1.4; object-fit:cover;"> -->
+        <div class="ph reveal" style="aspect-ratio:1.4; margin-top:28px;">
+          <div class="ph-name">Fellowship &mdash; Ghent</div>
+          <div class="ph-spec">4:3 &middot; with Tonnard &amp; Verpaele<br>archive photo is fine</div>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:15px; line-height:1.8; color:oklch(38% 0.012 55);">
+          Reconstructive surgery, microsurgery, keloid management and
+          lymphedema were studied over a full year, 2024&ndash;2025, under Dr.
+          Rei Ogawa at Nippon Medical School in Tokyo, whose work in the field
+          is internationally recognised.
+        </p>
+        <!-- <img src="images/about/tokyo-fellowship.jpg" alt="Fellowship training, Tokyo" style="width:100%; aspect-ratio:1.4; object-fit:cover;"> -->
+        <div class="ph reveal" style="aspect-ratio:1.4; margin-top:28px;">
+          <div class="ph-name">Fellowship &mdash; Tokyo</div>
+          <div class="ph-spec">4:3 &middot; with Dr. Ogawa<br>archive photo is fine</div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="link-quiet" style="display:inline-block; margin-top:48px;">Read Full Bio</a>
+  </div>
+
+  <!-- CTA -->
+  <div style="position:relative; overflow:hidden; padding:clamp(72px, 12vw, 170px) clamp(24px, 5vw, 56px); background: oklch(15% 0.035 155); text-align:center;">
+    <div class="aurora" style="position:absolute; inset:-25%; pointer-events:none; background: radial-gradient(closest-side, oklch(46% 0.11 155 / 0.45), transparent 72%);"></div>
+    <div style="position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; gap:26px;">
+      <h2 style="font-weight:300; font-style:italic; font-size:clamp(30px, 3.2vw, 44px); line-height:1.3; color:oklch(97% 0.006 85); max-width:480px;">Schedule a consultation</h2>
+      <a href="#" class="btn-primary btn-invert" style="margin-top:8px;">Book a Consultation</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="padding:clamp(36px, 8vw, 80px) clamp(24px, 5vw, 56px) clamp(36px, 8vw, 40px);">
+    <div style="max-width:1080px; margin:0 auto; display:flex; flex-wrap:wrap; gap:56px; justify-content:space-between; padding-bottom:44px;">
+      <div style="display:flex; flex-direction:column; gap:10px; max-width:280px;">
+        <span style="font-family:'Fraunces', serif; font-weight:500; font-style:italic; font-size:19px;">Dr. Pacifico Cruz</span>
+        <span style="font-size:13px; color:oklch(48% 0.012 55); line-height:1.7;">Board-certified plastic surgeon &mdash; reconstructive microsurgery and aesthetic facial rejuvenation.</span>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:13px;">
+        <span class="label">Practice</span>
+        <a href="about.html" class="footer-link" style="font-size:13.5px;">About</a>
+        <a href="procedures/index.html" class="footer-link" style="font-size:13.5px;">Procedures</a>
+        <a href="journal.html" class="footer-link" style="font-size:13.5px;">Journal</a>
+        <a href="locations.html" class="footer-link" style="font-size:13.5px;">Locations</a>
+        <a href="consultation.html" class="footer-link" style="font-size:13.5px;">Consultation</a>
+        <a href="international.html" class="footer-link" style="font-size:13.5px;">International Patients</a>
+        <a href="contact.html" class="footer-link" style="font-size:13.5px;">Contact</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:13px;">
+        <span class="label">Locations</span>
+        <span style="font-size:13.5px; color:oklch(38% 0.012 55);">St. Luke's Medical Center, BGC</span>
+        <span style="font-size:13.5px; color:oklch(38% 0.012 55);">Cardinal Santos Medical Center</span>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:13px;">
+        <span class="label">Contact</span>
+        <span style="font-size:13.5px; color:oklch(38% 0.012 55);">[INQUIRY EMAIL ADDRESS]</span>
+        <div style="display:flex; gap:16px; margin-top:2px;">
+          <a href="#" aria-label="LinkedIn" class="footer-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="8" y1="10" x2="8" y2="16"/><line x1="8" y1="7" x2="8" y2="7.01"/><path d="M12 16v-3.5a2.5 2.5 0 0 1 5 0V16"/></svg></a>
+          <a href="#" aria-label="Facebook" class="footer-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 3h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1080px; margin:0 auto; padding-top:28px; border-top:1px solid oklch(90% 0.006 80);">
+      <span style="font-size:12px; color:oklch(55% 0.012 55);">&copy; 2026 Dr. Pacifico Cruz, MD. Information on this site is for general purposes and does not constitute medical advice.</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

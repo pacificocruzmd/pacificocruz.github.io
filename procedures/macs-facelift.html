@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MACS Facelift — Dr. Pacifico Cruz, MD</title>
+<meta name="description" content="A minimal-access, short-scar facelift technique learned directly from Dr. Patrick Tonnard and Dr. Alexis Verpaele during fellowship in Ghent, Belgium.">
+<link rel="canonical" href="https://provenanceclinic.com/procedures/macs-facelift.html">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dr. Pacifico Cruz, MD">
+<meta property="og:title" content="MACS Facelift — Dr. Pacifico Cruz, MD">
+<meta property="og:description" content="A minimal-access, short-scar facelift technique learned directly from Dr. Patrick Tonnard and Dr. Alexis Verpaele during fellowship in Ghent, Belgium.">
+<meta property="og:url" content="https://provenanceclinic.com/procedures/macs-facelift.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MACS Facelift — Dr. Pacifico Cruz, MD">
+<meta name="twitter:description" content="A minimal-access, short-scar facelift technique learned directly from Dr. Patrick Tonnard and Dr. Alexis Verpaele during fellowship in Ghent, Belgium.">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&amp;family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&amp;family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Fraunces:ital,wght@0,300;0,400;0,500;1,400;1,500&amp;display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      font-weight: 400;
+      color: oklch(16% 0.006 50);
+      background: oklch(99% 0.004 90);
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3 { margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; letter-spacing: -0.01em; }
+    p { margin: 0; }
+    a { color: inherit; text-decoration: none; }
+    em { font-style: italic; color: oklch(38% 0.09 155); font-weight: 400; }
+    .eyebrow { font-style: italic; font-size: 14px; font-weight: 400; letter-spacing: 0.02em; color: oklch(52% 0.015 60); }
+    .label { font-size: 13px; font-weight: 400; font-style: italic; letter-spacing: 0.02em; color: oklch(58% 0.008 240); }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px; padding: 17px 38px;
+      font-size: 13px; letter-spacing: 0.08em; border: 1px solid oklch(16% 0.006 50);
+      color: oklch(16% 0.006 50); background: transparent; white-space: nowrap;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    .btn-primary:hover { background: oklch(16% 0.006 50); color: oklch(99% 0.004 90); }
+    .btn-invert { border-color: oklch(84% 0.005 240); color: oklch(84% 0.005 240); }
+    .btn-invert:hover { background: oklch(84% 0.005 240); color: oklch(15% 0.035 155); }
+    .link-quiet {
+      position: relative; font-size: 14.5px; letter-spacing: 0.01em; padding-bottom: 3px;
+      transition: color 0.35s ease;
+    }
+    .link-quiet::after {
+      content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px;
+      background: oklch(38% 0.09 155); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.5s cubic-bezier(.16,1,.3,1);
+    }
+    .link-quiet:hover::after { transform: scaleX(1); }
+    /* ——— NAV: light sans against the editorial serif ——— */
+    .nav .eyebrow, .nav .link-quiet {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-style: normal; font-weight: 300; font-size: 13px; letter-spacing: 0.06em;
+    }
+    .nav-link { color: oklch(16% 0.006 50); opacity: 0.62; transition: opacity 0.35s ease; }
+    .nav-link:hover, .nav-link.is-active { opacity: 1; }
+    .row { border-top: 1px solid oklch(90% 0.006 80); transition: padding-left 0.4s cubic-bezier(.16,1,.3,1); }
+    .row:hover { padding-left: 10px; }
+    .row:hover .row-title { color: oklch(38% 0.09 155); }
+    .row-title { transition: color 0.35s ease; }
+    .footer-link { color: oklch(16% 0.006 50); opacity: 0.55; transition: opacity 0.3s ease; }
+    .footer-link:hover { opacity: 1; }
+
+    /* ——— MOTION ——— */
+    @keyframes rise { from { opacity: 0; transform: translateY(26px); } }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes grow { from { transform: scaleX(0); } }
+    @keyframes aurora { 0%, 100% { transform: translate(-5%, -3%) scale(1); opacity: .5; } 50% { transform: translate(5%, 3%) scale(1.08); opacity: .8; } }
+    @keyframes ping { 0% { transform: scale(1); opacity: .55; } 70%, 100% { transform: scale(3.2); opacity: 0; } }
+    @keyframes glow { 0%, 100% { opacity: .4; } 50% { opacity: 1; } }
+
+    .enter { animation: rise 1.25s cubic-bezier(.16,1,.3,1) both; }
+    .d1 { animation-delay: .10s; } .d2 { animation-delay: .26s; } .d3 { animation-delay: .42s; }
+    .d4 { animation-delay: .58s; } .d5 { animation-delay: .74s; } .d6 { animation-delay: .90s; }
+    .draw { animation: draw 2.8s cubic-bezier(.37,0,.16,1) .45s both; }
+    .ping { transform-box: fill-box; transform-origin: center; opacity: 0; }
+    .row { position: relative; }
+    .row::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: oklch(38% 0.09 155); transform: scaleY(0); transform-origin: top; transition: transform .6s cubic-bezier(.16,1,.3,1); }
+    .row:hover::before { transform: scaleY(1); }
+
+    /* ——— LUZ: a figure climbing the suspension vector as you scroll ——— */
+    .arc-scope { view-timeline-name: --arc; view-timeline-axis: block; }
+    @keyframes travel { from { offset-distance: 0%; } to { offset-distance: 100%; } }
+    @keyframes swingF { from { transform: rotate(-9deg); } to { transform: rotate(9deg); } }
+    @keyframes swingB { from { transform: rotate(17deg); } to { transform: rotate(-17deg); } }
+    .travel { offset-rotate: auto; offset-distance: 42%; }
+    .limb { transform-box: fill-box; }
+    @supports not (offset-path: path("M0 0")) { .travel { display: none; } }
+
+    /* scroll-driven — degrades to fully visible where unsupported */
+    @supports (animation-timeline: view()) {
+      .row, .reveal { animation: rise 1s cubic-bezier(.16,1,.3,1) both; animation-timeline: view(); animation-range: entry 2% cover 22%; }
+      .progress { animation: grow linear both; animation-timeline: scroll(root block); }
+      .ping { animation: ping 1s linear both; animation-timeline: view(); animation-range: entry 20% cover 60%; }
+      .glow { animation: glow 1s linear both; animation-timeline: view(); animation-range: entry 10% cover 70%; }
+      .aurora { animation: aurora 1s linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
+      .travel { animation: travel linear both; animation-timeline: --arc; animation-range: entry 12% exit 88%; }
+      /* contralateral gait: each limb swings about its own shoulder or hip,
+         three full cycles across the same stretch of scroll */
+      .limb { animation-duration: 1s; animation-timing-function: cubic-bezier(.45,0,.55,1);
+              animation-iteration-count: 6; animation-direction: alternate; animation-fill-mode: both;
+              animation-timeline: --arc; animation-range: entry 12% exit 88%; }
+      .sw-f { animation-name: swingF; } .sw-b { animation-name: swingB; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .enter, .reveal, .row, .draw, .glow, .aurora {
+        animation: none !important; opacity: 1 !important; transform: none !important; stroke-dashoffset: 0 !important;
+      }
+      .ping { animation: none !important; opacity: 0 !important; }
+      .progress { animation: none !important; }
+      .travel { animation: none !important; offset-distance: 42% !important; }
+      .limb { animation: none !important; transform: none !important; }
+    }
+
+    /* ——— DRAWN PLATE (same surface as a placeholder, but it is the artwork) ——— */
+    .plate {
+      position: relative; background: oklch(96.5% 0.008 80);
+      border: 1px solid oklch(90% 0.006 80); overflow: hidden;
+    }
+    .plate svg { display: block; width: 100%; height: 100%; }
+    .plate-label {
+      position: absolute; left: 18px; bottom: 14px;
+      font-size: 11px; font-style: italic; letter-spacing: 0.02em;
+      color: oklch(52% 0.015 60);
+    }
+
+    /* ——— IMAGE PLACEHOLDERS ——— */
+    .ph {
+      position: relative; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 9px; text-align: center;
+      padding: 24px; background: oklch(96.5% 0.008 80);
+      border: 1px solid oklch(90% 0.006 80); overflow: hidden;
+    }
+    .ph::before {
+      content: ''; width: 26px; height: 26px; border-radius: 50%;
+      border: 1px solid oklch(38% 0.09 155); opacity: 0.45; margin-bottom: 2px; flex: none;
+    }
+    .ph-name { font-size: 13px; font-style: italic; letter-spacing: 0.02em; color: oklch(40% 0.05 155); }
+    .ph-spec { font-size: 10.5px; letter-spacing: 0.09em; text-transform: uppercase; color: oklch(58% 0.012 60); line-height: 1.75; }
+
+    .ph-sm { padding: 12px; gap: 6px; }
+    .ph-sm::before { width: 18px; height: 18px; margin-bottom: 0; }
+    .ph-sm .ph-spec { display: none; }
+    .ph-sm .ph-name { font-size: 11.5px; }
+
+    /* ——— LUZ: offset registration frame on buttons ——— */
+    .btn-primary { position: relative; }
+    .btn-primary::before {
+      content: ''; position: absolute; inset: 0; border: 1px solid currentColor;
+      opacity: .3; transform: translate(5px, 5px); pointer-events: none;
+      transition: transform .55s cubic-bezier(.16,1,.3,1), opacity .55s ease;
+    }
+    .btn-primary:hover::before { transform: translate(0, 0); opacity: 0; }
+
+    /* ——— RESPONSIVE ——— */
+    @media (max-width: 900px) {
+      .cols { grid-template-columns: 1fr 1fr !important; gap: 40px !important; }
+    }
+    @media (max-width: 720px) {
+      .nav { height: 74px !important; }
+      .nav-link { display: none !important; }
+      .hero { min-height: 560px !important; }
+      .row { grid-template-columns: 1fr !important; gap: 10px !important; }
+      .row:hover { padding-left: 0 !important; }
+      .cols { grid-template-columns: 1fr !important; gap: 34px !important; }
+      .btn-primary { width: 100% !important; justify-content: center !important; }
+    }
+  </style>
+
+</head>
+<body>
+
+<div style="width:100%; background: oklch(99% 0.004 90);">
+
+  <!-- NAV -->
+  <div class="nav" style="position:sticky; top:0; z-index:20; display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; padding:0 clamp(24px, 5vw, 64px); height:96px; background: oklch(99% 0.004 90 / 0.9); backdrop-filter: blur(6px);">
+    <div style="display:flex; align-items:center; gap:38px;">
+      <a href="../about.html" class="eyebrow nav-link">About</a>
+      <a href="index.html" class="eyebrow nav-link">Procedures</a>
+    </div>
+    <a href="../index.html" style="text-decoration:none; color:inherit;"><span style="font-family:'Fraunces', serif; font-weight:500; font-style:italic; font-size:21px; text-align:center;">Dr. Pacifico Cruz</span></a>
+    <div style="display:flex; align-items:center; justify-content:flex-end; gap:38px;">
+      <a href="../journal.html" class="eyebrow nav-link">Journal</a>
+      <a href="../locations.html" class="eyebrow nav-link">Locations</a>
+      <a href="../contact.html" class="link-quiet">Book</a>
+    </div>
+    <div class="progress" style="position:absolute; left:0; bottom:0; height:2px; width:100%; background:oklch(38% 0.09 155); transform:scaleX(0); transform-origin:left;"></div>
+  </div>
+
+  <!-- HEADER -->
+  <div style="max-width:780px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px) clamp(36px, 8vw, 70px); text-align:center;">
+    <div style="display:flex; flex-direction:column; align-items:center; gap:24px;">
+      <span class="eyebrow enter d1">Aesthetic &amp; Facial Rejuvenation</span>
+      <h1 class="enter d2" style="font-weight:300; font-size:clamp(36px, 4.8vw, 64px); line-height:1.15; max-width:660px;">The MACS <em>facelift</em></h1>
+      <p class="enter d3" style="font-size:16.5px; line-height:1.85; color:oklch(38% 0.012 55); max-width:520px;">Minimal Access Cranial Suspension &mdash; a short-scar technique that lifts the deeper tissues of the face vertically, in the direction they actually descend.</p>
+    </div>
+  </div>
+
+  <!-- LEAD IMAGE -->
+  <div style="max-width:1080px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 120px);">
+    <!-- <img src="images/procedures/macs-facelift-lead.jpg" alt="" style="width:100%; aspect-ratio:2.4; object-fit:cover;"> -->
+    <div class="ph enter d4" style="aspect-ratio:2.4;">
+      <div class="ph-name">Lead &mdash; facial anatomy or operative detail</div>
+      <div class="ph-spec">2.4:1 &middot; 2400px wide min<br>no identifiable patient</div>
+    </div>
+  </div>
+
+  <!-- WHAT IT IS -->
+  <div style="max-width:680px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 130px);">
+    <span class="label reveal">What it is</span>
+    <p class="reveal" style="font-size:16px; line-height:2; color:oklch(30% 0.012 55); margin-top:20px;">Rather than pulling skin, the MACS lift uses purse-string suspension sutures anchored to the firm fascia above the ear to reposition descended tissue of the midface, jawline and neck. Because the vector is vertical rather than backwards, the result tends to read as the face restored rather than tightened.<br><br>The incision stays largely in front of the ear and is shorter than that of a conventional facelift, and the dissection is less extensive. Candidacy still depends on the degree and pattern of laxity in an individual face &mdash; it is not the right operation for everyone, and that is a judgement made in person.</p>
+  </div>
+
+  <!-- PROVENANCE -->
+  <div style="background: oklch(97% 0.008 80);">
+    <div style="max-width:640px; margin:0 auto; padding:clamp(72px, 12vw, 110px) clamp(24px, 5vw, 56px); text-align:center;">
+      <span class="eyebrow" style="color:oklch(38% 0.09 155);">Provenance</span>
+      <h3 style="font-weight:300; font-size:clamp(24px, 2.6vw, 32px); line-height:1.35; margin:18px auto 0; max-width:520px;">Learned from the surgeons who developed it</h3>
+      <p style="font-size:15px; line-height:1.8; color:oklch(38% 0.012 55); max-width:520px; margin:22px auto 0;">The MACS technique was developed by Dr. Patrick Tonnard and Dr. Alexis Verpaele. Dr. Cruz trained under both of them directly during his aesthetic plastic surgery fellowship, March to June 2025, in Ghent and at E:MC2 in Sint-Martens-Latem, Belgium.</p>
+    </div>
+  </div>
+
+  <!-- ILLUSTRATION + DETAIL -->
+  <div style="max-width:1080px; margin:0 auto; padding:clamp(72px, 12vw, 130px) clamp(24px, 5vw, 56px) 0;">
+    <div class="cols" style="display:grid; grid-template-columns: 1fr 1fr; gap:24px;">
+      <div class="plate arc-scope reveal" style="aspect-ratio:1.35;">
+        <svg viewBox="0 0 540 400" fill="none" preserveAspectRatio="xMidYMid meet">
+          <!-- the vector family: the lift runs obliquely, not horizontally -->
+          <path d="M 66 300 C 158 282, 200 210, 262 176 S 396 110, 476 28" stroke="oklch(38% 0.09 155)" stroke-width="1" stroke-opacity="0.24" stroke-dasharray="3 6"/>
+          <path d="M 66 368 C 158 350, 200 278, 262 244 S 396 178, 476 96" stroke="oklch(38% 0.09 155)" stroke-width="1" stroke-opacity="0.24" stroke-dasharray="3 6"/>
+          <!-- the principal vector — the curve the figure travels -->
+          <path class="draw" d="M 66 334 C 158 316, 200 244, 262 210 S 396 144, 476 62" stroke="oklch(16% 0.006 50)" stroke-width="1" stroke-opacity="0.6" style="stroke-dasharray:620; stroke-dashoffset:620;"/>
+          <rect x="60" y="328" width="12" height="12" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1" stroke-opacity="0.6"/>
+          <rect x="470" y="56" width="12" height="12" fill="oklch(38% 0.09 155)"/>
+          <!-- an abstract figure, on fours, working its way up the vector -->
+          <g class="travel" style="offset-path: path('M 66 334 C 158 316, 200 244, 262 210 S 396 144, 476 62');">
+            <g transform="scale(1.95)" stroke="oklch(16% 0.006 50)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+              <!-- far side, lighter: the limbs in swing phase -->
+              <g stroke-opacity="0.42">
+                <path class="limb sw-b" d="M 16 -26 L 29 -19 L 40 -7" style="transform-origin: 0% 0%;"/>
+                <path class="limb sw-b" d="M -16 -22 L -4 -15 L 3 -4" style="transform-origin: 0% 0%;"/>
+              </g>
+              <!-- near side: torso, neck, and the two limbs bearing weight -->
+              <g stroke-opacity="0.85">
+                <path d="M -16 -22 L 16 -26"/>
+                <path d="M 16 -26 L 21 -32"/>
+                <path class="limb sw-f" d="M 16 -26 L 19 -14 L 17 0" style="transform-origin: 0% 0%;"/>
+                <path class="limb sw-f" d="M -16 -22 L -22 -12 L -16 0" style="transform-origin: 100% 0%;"/>
+              </g>
+              <circle cx="24.5" cy="-36.2" r="5.6" fill="oklch(38% 0.09 155)" stroke="none"/>
+            </g>
+          </g>
+        </svg>
+        <span class="plate-label">Suspension vectors</span>
+      </div>
+      <div class="ph reveal" style="aspect-ratio:1.35;">
+        <div class="ph-name">Operative detail &mdash; instruments or loupes</div>
+        <div class="ph-spec">3:2 &middot; 2000px min &middot; macro</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- THE PROCESS -->
+  <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px);">
+    <div style="text-align:center; margin-bottom:56px;">
+      <span class="eyebrow">Start to Finish</span>
+      <h2 style="font-weight:300; font-size:clamp(28px, 3vw, 38px); line-height:1.25; margin-top:16px;">How it runs</h2>
+    </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">I</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Consultation</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Assessment in person, a discussion of what is realistic, and a plan. Nothing is booked at the first visit unless you want it to be.</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">II</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">The procedure</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">[TYPICAL DURATION] under [ANAESTHESIA TYPE], at St. Luke's Medical Center, BGC or Cardinal Santos Medical Center.</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">III</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Early recovery</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">[FIRST-WEEK EXPECTATIONS &mdash; dressings, swelling, activity limits, time off work].</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; border-bottom:1px solid oklch(88% 0.006 80); display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">IV</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Follow-up</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">[FOLLOW-UP SCHEDULE]. For patients travelling from abroad, follow-up continues by video once you are home.</div>
+        </div>
+      </div>
+
+    <!-- PRACTICAL -->
+    <div class="cols" style="display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:44px; margin-top:64px; text-align:center;">
+      <div class="reveal"><div class="label" style="margin-bottom:10px;">Duration</div><div style="font-size:14.5px; color:oklch(32% 0.01 55);">[TYPICAL DURATION]</div></div>
+      <div class="reveal"><div class="label" style="margin-bottom:10px;">Anaesthesia</div><div style="font-size:14.5px; color:oklch(32% 0.01 55);">[ANAESTHESIA TYPE]</div></div>
+      <div class="reveal"><div class="label" style="margin-bottom:10px;">Days in Manila</div><div style="font-size:14.5px; color:oklch(32% 0.01 55);">[LENGTH OF STAY]</div></div>
+    </div>
+    <p class="label reveal" style="text-align:center; margin-top:40px; max-width:520px; margin-left:auto; margin-right:auto;">Candidacy for any procedure is determined at an in-person consultation. Not every procedure suits every patient.</p>
+  </div>
+
+  <!-- RELATED -->
+  <div style="background: oklch(97% 0.008 80);">
+    <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 120px) clamp(24px, 5vw, 56px);">
+      <span class="eyebrow" style="display:block; text-align:center; margin-bottom:40px;">Related</span>
+      <div class="row" style="padding:26px 0; display:flex; align-items:baseline; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:5px;">Facial Rejuvenation</div>
+          <div style="font-size:13.5px; color:oklch(48% 0.012 55);">Adjunct and non-surgical facial procedures</div>
+        </div>
+        <a href="../consultation.html" class="link-quiet">Read on</a>
+      </div>
+      <div class="row" style="padding:26px 0; border-bottom:1px solid oklch(88% 0.006 80); display:flex; align-items:baseline; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:5px;">Regenerative technique</div>
+          <div style="font-size:13.5px; color:oklch(48% 0.012 55);">How biologic method sustains an aesthetic result</div>
+        </div>
+        <a href="regenerative.html" class="link-quiet">Read on</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="position:relative; overflow:hidden; padding:clamp(72px, 12vw, 170px) clamp(24px, 5vw, 56px); background: oklch(15% 0.035 155); text-align:center;">
+    <div class="aurora" style="position:absolute; inset:-25%; pointer-events:none; background: radial-gradient(closest-side, oklch(46% 0.11 155 / 0.45), transparent 72%);"></div>
+    <div style="position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; gap:26px;">
+      <h2 style="font-weight:300; font-style:italic; font-size:clamp(30px, 3.2vw, 44px); line-height:1.3; color:oklch(97% 0.006 85); max-width:520px;">Discuss whether this is right for you</h2>
+      <a href="#" class="btn-primary btn-invert" style="margin-top:8px;">Book a Consultation</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="padding:clamp(36px, 8vw, 80px) clamp(24px, 5vw, 56px) clamp(36px, 8vw, 40px);">
+    <div style="max-width:1080px; margin:0 auto; display:flex; flex-wrap:wrap; gap:56px; justify-content:space-between; padding-bottom:44px;">
+      <div style="display:flex; flex-direction:column; gap:10px; max-width:280px;">
+        <span style="font-family:'Fraunces', serif; font-weight:500; font-style:italic; font-size:19px;">Dr. Pacifico Cruz</span>
+        <span style="font-size:13px; color:oklch(48% 0.012 55); line-height:1.7;">Board-certified plastic surgeon &mdash; reconstructive microsurgery and aesthetic facial rejuvenation.</span>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:13px;">
+        <span class="label">Practice</span>
+        <a href="../about.html" class="footer-link" style="font-size:13.5px;">About</a>
+        <a href="index.html" class="footer-link" style="font-size:13.5px;">Procedures</a>
+        <a href="../journal.html" class="footer-link" style="font-size:13.5px;">Journal</a>
+        <a href="../locations.html" class="footer-link" style="font-size:13.5px;">Locations</a>
+        <a href="../consultation.html" class="footer-link" style="font-size:13.5px;">Consultation</a>
+        <a href="../international.html" class="footer-link" style="font-size:13.5px;">International Patients</a>
+        <a href="../contact.html" class="footer-link" style="font-size:13.5px;">Contact</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:13px;">
+        <span class="label">Locations</span>
+        <span style="font-size:13.5px; color:oklch(38% 0.012 55);">St. Luke's Medical Center, BGC</span>
+        <span style="font-size:13.5px; color:oklch(38% 0.012 55);">Cardinal Santos Medical Center</span>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:13px;">
+        <span class="label">Contact</span>
+        <span style="font-size:13.5px; color:oklch(38% 0.012 55);">[INQUIRY EMAIL ADDRESS]</span>
+        <div style="display:flex; gap:16px; margin-top:2px;">
+          <a href="#" aria-label="LinkedIn" class="footer-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="8" y1="10" x2="8" y2="16"/><line x1="8" y1="7" x2="8" y2="7.01"/><path d="M12 16v-3.5a2.5 2.5 0 0 1 5 0V16"/></svg></a>
+          <a href="#" aria-label="Facebook" class="footer-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 3h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1080px; margin:0 auto; padding-top:28px; border-top:1px solid oklch(90% 0.006 80);">
+      <span style="font-size:12px; color:oklch(55% 0.012 55);">&copy; 2026 Dr. Pacifico Cruz, MD. Information on this site is for general purposes and does not constitute medical advice.</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
